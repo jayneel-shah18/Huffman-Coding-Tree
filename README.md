@@ -5,3 +5,6 @@
 - [Het Patel](https://github.com/het4902)
 - [Jainik Bakshi](https://github.com/jainikbakshi)
 - [Jayneel Shah](https://github.com/jayneel-shah18)
+
+Try out the simulation!
+[Huffman-Coding-Tree] (https://jayneel-shah18.github.io/Huffman-Coding-Tree/)
