@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huffman Coding Tree</title>
+</head>
+<body>
+    <h1>Huffman Coding Tree</h1>
+    <h2>What is Huffman Coding?</h2>
+    <ul>
+        <li>Huffman coding is a lossless data compression algorithm. </li>
+        <li>The idea is to assign variable-length codes to input characters, lengths of the assigned codes are based on the frequencies of corresponding characters. </li>
+        <li>The most frequent character gets the smallest code and the least frequent character gets the largest code.</li>
+    </ul>
+    <h2>What are the applications of Huffman Coding?</h2>
+    <ul>
+        <li>They are used for transmitting fax and text.</li>
+        <li>They are used by conventional compression formats like PKZIP, GZIP, etc.</li>
+        <li>Multimedia codecs like JPEG, PNG, and MP3 use Huffman encoding</li>
+    </ul>
+    <h3>Complexity Analysis of the code</h3>
+    <ul>
+        <li>The overall time complexity is O(nlogn).</li>
+        <li>We create a leaf node for each unique character and build a min heap of all leaf nodes.</li>
+        <li>Then we extract two nodes with the minimum frequency from the min heap.</li>
+        <li>Create a new internal node with a frequency equal to the sum of the two nodes frequencies.
+            Make the first extracted node as its left child and the other extracted node as its right child and add this node to the min heap.</li>
+        <li>Repeat this till only one node is left.</li>
+        <li>For n nodes the time to extract the minimum node is logn and as it is called 2*(n-1) times, complexity is nlogn.</li>
+    </ul>   
+    <br> <br>
+    <img src="huffman.png" width="850px" height="550px">
+    <br> <br>
+    <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@JayneelShah/huffman-coding-tree?embed=true"></iframe> 
+    <br>
+    <br>
+    <br>
+    <p>Check out the repository on GitHub.</p>
+    <a href="https://github.com/jayneel-shah18/Huffman-Coding-Tree">GitHub</a>
+</body>
+</html>
