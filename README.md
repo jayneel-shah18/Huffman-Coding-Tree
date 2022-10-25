@@ -7,4 +7,4 @@
 - [Jayneel Shah](https://github.com/jayneel-shah18)
 
 Try out the simulation!
-[Huffman-Coding-Tree] (https://jayneel-shah18.github.io/Huffman-Coding-Tree/)
+[Huffman-Coding-Tree](https://jayneel-shah18.github.io/Huffman-Coding-Tree/)
