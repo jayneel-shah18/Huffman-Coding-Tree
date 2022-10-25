@@ -1,43 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Huffman Coding Tree</title>
+    <script src="./js/script.js" type="module"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Huffman Coding Tree" />
+    <meta name="description" content="Huffman Coding Tree" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jayneel-shah18.github.io/Huffman-Coding-Tree/" />
+    <meta property="og:title" content="Huffman Coding Tree" />
+    <meta property="og:description" content="Huffman Coding Tree" />
+    <meta property="og:image" content="https://opengraph.githubassets.com/1/jayneel-shah18/Huffman-Coding-Tree/" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://jayneel-shah18.github.io/Huffman-Coding-Tree/" />
+    <meta property="twitter:title" content="Huffman Coding Tree" />
+    <meta property="twitter:description" content="Huffman Coding Tree" />
+    <meta property="twitter:image" content="https://opengraph.githubassets.com/1/jayneel-shah18/Huffman-Coding-Tree/" />
 </head>
+
 <body>
-    <h1>Huffman Coding Tree</h1>
-    <h2>What is Huffman Coding?</h2>
-    <ul>
-        <li>Huffman coding is a lossless data compression algorithm. </li>
-        <li>The idea is to assign variable-length codes to input characters, lengths of the assigned codes are based on the frequencies of corresponding characters. </li>
-        <li>The most frequent character gets the smallest code and the least frequent character gets the largest code.</li>
-    </ul>
-    <h2>What are the applications of Huffman Coding?</h2>
-    <ul>
-        <li>They are used for transmitting fax and text.</li>
-        <li>They are used by conventional compression formats like PKZIP, GZIP, etc.</li>
-        <li>Multimedia codecs like JPEG, PNG, and MP3 use Huffman encoding</li>
-    </ul>
-    <h3>Complexity Analysis of the code</h3>
-    <ul>
-        <li>The overall time complexity is O(nlogn).</li>
-        <li>We create a leaf node for each unique character and build a min heap of all leaf nodes.</li>
-        <li>Then we extract two nodes with the minimum frequency from the min heap.</li>
-        <li>Create a new internal node with a frequency equal to the sum of the two nodes frequencies.
-            Make the first extracted node as its left child and the other extracted node as its right child and add this node to the min heap.</li>
-        <li>Repeat this till only one node is left.</li>
-        <li>For n nodes the time to extract the minimum node is logn and as it is called 2*(n-1) times, complexity is nlogn.</li>
-    </ul>   
-    <br> <br>
-    <img src="huffman.png" width="850px" height="550px">
-    <br> <br>
-    <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@JayneelShah/huffman-coding-tree?embed=true"></iframe> 
-    <br>
-    <br>
-    <br>
-    <p>Check out the repository on GitHub.</p>
-    <a href="https://github.com/jayneel-shah18/Huffman-Coding-Tree">GitHub</a>
+    <div class="box">
+        <div class="loading">
+            <div id="loading-line"></div>
+        </div>
+        <div class="title">Redirecting you to
+            <a id="url" href="">Huffman Coding Notion Page</a> by
+            <a href="//github.com/jayneel-shah18">Jayneel Shah</a>
+        </div>
+        <svg viewBox="0 0 2616 893" fill="none" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="2616" height="893" fill="white" />
+            <path d="M1031 391C1031 386.582 1034.58 383 1039 383H1354.6V399H1039C1034.58 399 1031 395.418 1031 391V391Z"
+                fill="black" />
+            <path
+                d="M1272.66 312.657C1275.78 309.533 1280.85 309.533 1283.97 312.657L1354.59 383.273L1343.27 394.587L1272.66 323.971C1269.53 320.846 1269.53 315.781 1272.66 312.657V312.657Z"
+                fill="black" />
+            <path
+                d="M1272.66 469.93C1269.53 466.806 1269.53 461.741 1272.66 458.616L1343.27 388L1354.59 399.314L1283.97 469.93C1280.85 473.054 1275.78 473.054 1272.66 469.93V469.93Z"
+                fill="black" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M382.14 36C176.533 36 10 202.533 10 408.14C10 572.812 116.525 711.899 264.451 761.208C283.058 764.464 290.035 753.3 290.035 743.531C290.035 734.693 289.57 705.387 289.57 674.22C196.07 691.432 171.881 651.427 164.438 630.494C160.252 619.795 142.11 586.767 126.294 577.929C113.269 570.951 94.6619 553.74 125.829 553.275C155.135 552.809 176.067 580.255 183.045 591.419C216.538 647.705 270.033 631.889 291.431 622.121C294.687 597.931 304.456 581.65 315.155 572.347C232.354 563.043 145.831 530.946 145.831 388.603C145.831 348.132 160.252 314.64 183.975 288.59C180.254 279.287 167.229 241.142 187.697 189.973C187.697 189.973 218.864 180.204 290.035 228.117C319.807 219.744 351.438 215.558 383.07 215.558C414.702 215.558 446.334 219.744 476.105 228.117C547.277 179.739 578.444 189.973 578.444 189.973C598.912 241.142 585.887 279.287 582.165 288.59C605.889 314.64 620.31 347.667 620.31 388.603C620.31 531.411 533.322 563.043 450.521 572.347C464.011 583.976 475.64 606.305 475.64 641.193C475.64 690.966 475.175 730.971 475.175 743.531C475.175 753.3 482.153 764.929 500.76 761.208C647.755 711.899 754.28 572.347 754.28 408.14C754.28 202.533 587.747 36 382.14 36Z"
+                fill="black" />
+            <rect x="524" y="423" width="460" height="460" rx="230" fill="white" />
+            <rect x="524" y="423" width="460" height="460" rx="230" fill="url(#pattern0)" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2109.06 11.7744L1678.79 43.5553C1644.08 46.5569 1632 69.2397 1632 96.4249V568.122C1632 589.296 1639.52 607.415 1657.66 631.629L1758.8 763.146C1775.42 784.32 1790.53 788.862 1822.26 787.353L2321.93 757.104C2364.17 754.095 2376.28 734.421 2376.28 701.171V170.508C2376.28 153.322 2369.49 148.369 2349.51 133.703L2208.73 34.4495C2175.5 10.2892 2161.92 7.23321 2109.06 11.7667V11.7744ZM1833.56 161.822C1792.75 164.567 1783.5 165.189 1760.33 146.347L1701.42 99.4887C1695.43 93.4233 1698.44 85.8572 1713.52 84.3486L2127.16 54.123C2161.89 51.0903 2179.98 63.1977 2193.57 73.7732L2264.51 125.173C2267.54 126.705 2275.08 135.749 2266.01 135.749L1838.84 161.464L1833.56 161.83V161.822ZM1785.99 696.637V246.146C1785.99 226.472 1792.03 217.397 1810.12 215.873L2300.74 187.148C2317.38 185.648 2324.9 196.223 2324.9 215.866V663.356C2324.9 683.029 2321.87 699.67 2294.71 701.171L1825.21 728.387C1798.05 729.888 1786 720.844 1786 696.637H1785.99ZM2249.44 270.298C2252.45 283.906 2249.44 297.514 2235.84 299.07L2213.21 303.556V636.163C2193.56 646.738 2175.47 652.78 2160.35 652.78C2136.19 652.78 2130.16 645.214 2112.06 622.555L1964.09 389.739V614.989L2010.9 625.587C2010.9 625.587 2010.9 652.804 1973.13 652.804L1869.01 658.846C1865.97 652.78 1869.01 637.671 1879.56 634.662L1906.75 627.119V329.295L1869.02 326.239C1865.98 312.631 1873.53 292.981 1894.68 291.457L2006.4 283.937L2160.36 519.763V311.13L2121.12 306.62C2118.08 289.956 2130.16 277.849 2145.24 276.371L2249.44 270.306V270.298Z"
+                fill="black" />
+            <rect x="2146" y="423" width="460" height="460" rx="230" fill="white" />
+            <rect x="2146" y="423" width="460" height="460" rx="230" fill="url(#pattern1)" />
+            <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_16_24" transform="scale(0.00217391)" />
+                </pattern>
+                <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_16_24" transform="scale(0.00217391)" />
+                </pattern>
+
+                <image id="image0_16_24" width="460" height="460" xlink:href="" />
+            </defs>
+        </svg>
+        <div class="credits">Designed and developed with ❤️ by
+            <a href="//github.com/patelka2211" target="_blank">
+                Kartavya Patel
+            </a>
+        </div>
+    </div>
 </body>
+
 </html>
