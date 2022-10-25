@@ -38,9 +38,9 @@ setTimeout(() => {
         document.getElementById("loading-line").classList.add("fill");
         document.getElementById(
             "loading-line"
-        ).style.transition = `transition: width ${wait_time}s ease, border-top-right-radius ${
+        ).style.transition = `width ${wait_time}s ease, border-top-right-radius ${
             wait_time * 3
-        }s ease;`;
+        }s ease`;
 
         setTimeout(() => {
             window.location.href = redirect_url;
