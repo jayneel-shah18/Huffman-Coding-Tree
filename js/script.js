@@ -11,7 +11,7 @@ function getBase64Image(img) {
     return dataURL;
 }
 
-let redirect_url = "//notion.so",
+let redirect_url = "https://notion.so",
     user_dp = "https://avatars.githubusercontent.com/u/80264736",
     wait_time = 4;
 document.getElementById("url").href = redirect_url;
