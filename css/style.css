@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+body .box {
+  width: 84%;
+  max-width: 960px;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .box .loading {
+  width: 100%;
+  margin-bottom: 14px;
+  height: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+body .box .loading #loading-line {
+  height: inherit;
+  width: 1px;
+  background-color: rgb(52, 120, 246);
+  transition: width 4s ease, border-top-right-radius 12s ease;
+  border-top-left-radius: inherit;
+  border-top-right-radius: 0;
+}
+body .box .loading #loading-line.fill {
+  width: 100%;
+  border-top-right-radius: inherit;
+}
+body .box .title {
+  padding: 4px;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+body .box .title a {
+  text-decoration: none;
+  color: rgb(52, 120, 246);
+}
+body .box .title a:hover {
+  cursor: pointer;
+}
+body .box .title:hover {
+  cursor: default;
+}
+body .box svg {
+  width: 75%;
+  aspect-ratio: 2616/893;
+  margin-bottom: 20px;
+}
+body .box .credits {
+  margin-bottom: 20px;
+}
+body .box .credits a {
+  text-decoration: none;
+  color: rgb(52, 120, 246);
+}
+body .box .credits a:hover {
+  cursor: pointer;
+}
+body .box .credits:hover {
+  cursor: default;
+}/*# sourceMappingURL=style.css.map */
