@@ -61,6 +61,7 @@ body .box svg {
 }
 body .box .credits {
   margin-bottom: 20px;
+  text-align: center;
 }
 body .box .credits a {
   text-decoration: none;
