@@ -11,7 +11,9 @@ function getBase64Image(img) {
     return dataURL;
 }
 
-let redirect_url = "https://notion.so",
+//link added - 06:53, 26-10-22
+//link update - 10:06, 26-10-22
+let redirect_url = "https://azure-floor-65d.notion.site/Huffman-Encoding-a26f714c851f4569b280df2d7ede4227",
     user_dp = "https://avatars.githubusercontent.com/u/80264736",
     wait_time = 4;
 document.getElementById("url").href = redirect_url;
